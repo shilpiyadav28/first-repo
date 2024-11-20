@@ -30,6 +30,80 @@ for (let i=0; i<places.length; i++){
 }
 console.log(visitedPlaces);
 
+// for-of loop 
+// let mylist =[2, 5,6,7]
+// for loop is used to iterate the loop to get the values from array, string , sets ( to get the values directly)
+// for (const i of mylist) {
+//     // i is the element name and mylist is the object
+// }
+//for-in loop is used to iterate find the key-values
+
+// 6. stop the loop when "berlin" found
+
+let citipoupulation = {
+    india : 13000000,
+    london : 750000,
+    "New York" : 370000,
+    berlin : 980000,
+    paris : 870000,
+}
+let populationTable ={};
+for (const i in citipoupulation) {
+    // console.log (key + " : " + object[key]) // to get both key and values
+        //console.log(i + " : " + citipoupulation[i]);
+        if (i === "berlin" || i=== "Berlin"){
+            break;
+        }
+        populationTable[i] = citipoupulation[i];
+        //console.log(i + " : " + citipoupulation[i]);
+    
+}
+
+// skip the loop which is having morethan 3M population
+
+let population = {
+    india : 13000000,
+    london : 75000,
+    "New York" : 370000,
+    berlin : 98000,
+    paris : 8700,
+};
+let largeCities = {};
+for (const i in population) {
+    if (population[i]>=300000){
+        continue;
+    }
+    largeCities[i] = population[i]
+    console.log(i + " : " + largeCities[i]);
+    
+    
+}
+
+// forEach loop
+// it is a inbulit function or method to iterate an array to give output one by one without using external variables;
+// syntax 
+// array.forEach(function(currentValue, index, array){
+    //   eg:  console.log(index +":" + currentValue) 
+
+
+    //hum esko ese bhi likh skte h or alag ek function bhi bna skte h , or call kr ste h
+// function loop (currentValue, index, array){
+    //console.log(index +":" + currentValue)
+//});
+
+//});
+
+let array = [ "sanjay", "jhon", "alice"];
+
+array.forEach(function(value,index) {  // value and index are variable names , it can be anything
+    console.log(index + ":" + value);
+});
+
+
+// 7 
+
+
+
 
 
 
