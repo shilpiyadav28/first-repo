@@ -100,7 +100,34 @@ array.forEach(function(value,index) {  // value and index are variable names , i
 });
 
 
-// 7 
+// 7 using for Each loop stop the loop when chai is found
+
+let drinks = ["coke", "maazza", "pepsi" , "chai", "milk"]
+let givenOrder = [];
+drinks.forEach(function(v){
+    if(v === "chai" || v === "Chai"){
+        return;   // break yaha use nhi hoga kyuki we are in loop but although we are in function;
+    }
+    givenOrder.push(v);
+
+})
+console.log(givenOrder);
+
+//8 iterate the loop skip "delhi"
+
+let tour = ["chandigadh", "jibhi", "delhi", "himachal", "manali"];
+let vistingPlaces = [];
+tour.forEach(function(place){
+    if( place ==="delhi" || place ==="Delhi"){
+        return;  // yaha skip ke liye return use krne pr bhi yeh har element ke liye loop run hoooga
+    }
+    vistingPlaces.push(place);
+})
+
+console.log(vistingPlaces);
+
+
+
 
 
 
