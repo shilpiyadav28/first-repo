@@ -126,6 +126,18 @@ tour.forEach(function(place){
 
 console.log(vistingPlaces);
 
+// q9 iterates the loop skip value "7" and rest by 2;
+
+let num = [ 2, 5,7, 9]
+let newNum =[];
+for (let i = 0; i < num.length; i++) {
+    if(num[i] ===7){
+        continue;
+         }
+   newNum.push(num[i]*2)
+};
+console.log(newNum);
+
 
 
 
