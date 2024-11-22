@@ -85,3 +85,39 @@ function returnSecondValue(getArray){
 
 // console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
+
+/***************************************************************************/
+
+// functions from udemy
+
+function greet(name) {  // name is a parameter
+
+    console.log(`hello ${name}`);
+     
+}
+
+greet("shilpi"); // shilpi is an argument 
+
+// q1 write a function named "makeTea" with Parameter "typeOfTea" and returns a string a string like "making a grren tea"
+// when called with " green Tea" and stro the result in a varible name "teaOrder"
+
+function makeTea(typeOfTea) {
+
+    return (`making ${typeOfTea} `);
+   
+}
+ let order = makeTea("Green Tea");
+ console.log(order);
+ 
+//q2
+
+
+function orderTea(teaType) {
+    function confirmOrder() {
+        return console.log(`order confirmed for ${teaType}`);
+        
+    }
+    return confirmOrder();
+    
+}
+orderTea(`chai`);
