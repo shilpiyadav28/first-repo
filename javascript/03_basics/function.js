@@ -121,3 +121,21 @@ function orderTea(teaType) {
     
 }
 orderTea(`chai`);
+
+// high order function ********************************/
+
+// write a function named `processTeaOrder` that takes another function "makeTea" as a parameter and calls it with
+// the argument "early grey" 
+// and return the result of calling "makeTea" 
+
+function makeTea(tea) {
+    makeTea(tea);
+    
+}
+function processTeaOrder(makeTea) {
+    return makeTea("early grey");
+
+    
+}
+
+let order2 = processTeaOrder(makeTea)
