@@ -111,6 +111,37 @@ let myfootwear = new FootWear ("5", "heels");  // this is the object
 console.log(myfootwear.sample());
 
 
+// ********************** hands-On ******************
+
+function Person(name , age) {
+    this.name = name;
+    this.age = age;
+    
+    
+    this.greet = function () {
+
+        // if(this.age < 0){
+        //     throw Error (`Age is not a positive number`);
+        
+        return `Hello, my name is ${this.name}`
+        
+    };
+};
+let myname = new Person("shilpi" , -6);
+console.log(myname.greet());
+
+function Animal(type) {
+    this.speak = function () {
+        return `Animal speaking`;
+    }
+    this.type =type;
+}
+function Dog() extends Animal () {
+    Animal.prototype.bark = function (){
+        return `Woof! is the sound of ${this.type}`;
+    }
+    
+}
 
 
 
