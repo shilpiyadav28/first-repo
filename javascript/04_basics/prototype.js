@@ -130,18 +130,18 @@ function Person(name , age) {
 let myname = new Person("shilpi" , -6);
 console.log(myname.greet());
 
-function Animal(type) {
-    this.speak = function () {
-        return `Animal speaking`;
-    }
-    this.type =type;
-}
-function Dog() extends Animal () {
-    Animal.prototype.bark = function (){
-        return `Woof! is the sound of ${this.type}`;
-    }
+// function Animal(type) {
+//     this.speak = function () {
+//         return `Animal speaking`;
+//     }
+//     this.type =type;
+// }
+// Dog() extends Animal () {
+//     Animal.prototype.bark = function (){
+//         return `Woof! is the sound of ${this.type}`;
+//     }
     
-}
+// }
 
 
 
