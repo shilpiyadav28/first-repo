@@ -48,4 +48,31 @@ addingchild.appendChild("changedItem");
 document.getElementById("removetask").addEventListener("click" , function () {
   let newtasklist = document.getElementById("tasking");
   newtasklist.lastElementChild.remove(newtasklist);
+});
+
+// examp-6  event handling in the DOM  
+document.getElementById("eventhandler").addEventListener("dblclick", function () {
+  alert("hello user!!");
 })
+
+// example-7 ---- jis tea pr click kroge uska name show hoga
+document.getElementById("tealist").addEventListener("" , function(event){
+    console.log(event.target && event.target.matches('.teaItem'));
+    alert("You Selected :" + event.target.textContent);
+    
+});
+
+//example -8 ----form submitted
+document.getElementById("feedbackdetails").addEventListener('submit', function(event){
+  event.preventDefault();
+  let feedback = document.getElementById("feedbackid").value;
+  console.log(feedback);
+  document.getElementById("displayed").textContent = "Feedback is submitted";
+});
+
+// example -9 
+
+
+
+  
+
